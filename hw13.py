@@ -2,7 +2,7 @@
 
 ticketQty = int(input('Input ticket quantity: '))
 if ticketQty not in range(1, 1000):
-    print('Неверно указано количество!')
+    print('Invalid quantity value!')
     exit(0)
 
 age = int(input('Input your age: '))
@@ -15,7 +15,7 @@ elif age in range(18, 25):
 elif age >= 25:
     price = 1390
 else:
-    print('Неверно указан возраст!')
+    print('Invalid age value!')
     exit(1)
 
 cost = ticketQty * price
@@ -26,4 +26,4 @@ if ticketQty > 3:
 
 cost -= cost * discount
 
-print(f'С вас {cost} рублей за {ticketQty} шт. по цене {price}. Ваша скидка: {discount * 100} %')
+print(f'Total cost: {cost} RUR for {ticketQty} pcs. Price of each {price} RUR. Your discount: {discount * 100} %')
